@@ -251,7 +251,7 @@ class TestUpload(unittest.TestCase):
         self.upload_test(b'cl\xC3\xA9/dossi\xC3\xA9/bien rang\xC3\xA9/test',
                          False,
                          [b'test'])
-        self.upload_test(b'cl\xC3\xA9/dossi\xC3\xA9', True,
+        self.upload_test(b'cl\xC3\xA9/dossi\xC3\xA9/', True,
                          [b'dossi\xC3\xA9',
                           b'dossi\xC3\xA9/bien rang\xC3\xA9',
                           b'dossi\xC3\xA9/bien rang\xC3\xA9/test'])
